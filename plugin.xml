@@ -82,7 +82,7 @@
         <header-file src="src/ios/CordovaAdalUtils.h" />
         <source-file src="src/ios/CordovaAdalUtils.m" />
 
-        <framework src="src/ios/ADAL.framework" custom="true"/>
+        <framework src="src/ios/ADAL.framework" custom="true" embed="true" />
 
         <resource-file src="src/ios/ADALiOS.entitlements" />
         <hook type="after_plugin_install" src="scripts/configureEntitlementsIos.js" />
@@ -107,6 +107,7 @@
         <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
             <array>
                 <string>msauth</string>
+                <string>msauthv3</string>
             </array>
         </config-file>
 
