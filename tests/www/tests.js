@@ -16,10 +16,10 @@ var TEST_USER_ID = '';
 var INVALID_USER_ID = 'invalid@user.id';
 
 var AuthenticationContext = Microsoft.ADAL.AuthenticationContext;
-var AuthenticationResult = require('cordova-plugin-ms-adal.AuthenticationResult');
-var TokenCacheItem = require('cordova-plugin-ms-adal.TokenCacheItem');
-var TokenCache = require('cordova-plugin-ms-adal.TokenCache');
-var UserInfo = require('cordova-plugin-ms-adal.UserInfo');
+var AuthenticationResult = require('cordova-plugin-ms-adal-is-back.AuthenticationResult');
+var TokenCacheItem = require('cordova-plugin-ms-adal-is-back.TokenCacheItem');
+var TokenCache = require('cordova-plugin-ms-adal-is-back.TokenCache');
+var UserInfo = require('cordova-plugin-ms-adal-is-back.UserInfo');
 
 module.exports.defineAutoTests = function () {
 

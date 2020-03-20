@@ -6,7 +6,7 @@ module.exports = function (ctx) {
     var shell = ctx.requireCordovaModule('shelljs');
     var path = ctx.requireCordovaModule('path');
     var fs = ctx.requireCordovaModule('fs');
-    var helperPluginId = 'cordova-plugin-ms-adal-sso';
+    var helperPluginId = 'cordova-plugin-ms-adal-is-back-sso';
 
     // Removing references from .projitems
     var projitems = shell.ls(path.join(ctx.opts.projectRoot, 'platforms/windows/*.projitems'))[0];
