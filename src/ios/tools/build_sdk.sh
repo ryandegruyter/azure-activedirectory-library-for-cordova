@@ -15,8 +15,8 @@ DISABLE_INSTRUMENT="GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=NO"
 
 proj="ADAL"
 echo "Building $proj"
-xcodebuild  -UseNewBuildSystem=NO -workspace ADAL.xcworkspace -scheme "ADAL iOS" -configuration $BUILD_CONFIGURATION ARCHS="x86_64" -sdk iphonesimulator VALID_ARCHS="x86_64" ALWAYS_SEARCH_USER_PATHS="NO" ONLY_ACTIVE_ARCH=NO CONFIGURATION_BUILD_DIR="../build/emulator" clean build $DISABLE_COVERAGE $DISABLE_INSTRUMENT
-xcodebuild  -UseNewBuildSystem=NO -workspace ADAL.xcworkspace -scheme "ADAL iOS" -configuration $BUILD_CONFIGURATION ARCHS="arm64" -sdk iphoneos VALID_ARCHS="arm64" ALWAYS_SEARCH_USER_PATHS="NO" CONFIGURATION_BUILD_DIR="../build/device" clean build $DISABLE_COVERAGE $DISABLE_INSTRUMENT
+xcodebuild  -UseNewBuildSystem=NO -workspace ADAL.xcworkspace -scheme "ADAL iOS" -configuration $BUILD_CONFIGURATION ARCHS="i386 x86_64" -sdk iphonesimulator VALID_ARCHS="i386 x86_64" ALWAYS_SEARCH_USER_PATHS="NO" ONLY_ACTIVE_ARCH=NO CONFIGURATION_BUILD_DIR="../build/emulator" clean build $DISABLE_COVERAGE $DISABLE_INSTRUMENT
+xcodebuild  -UseNewBuildSystem=NO -workspace ADAL.xcworkspace -scheme "ADAL iOS" -configuration $BUILD_CONFIGURATION ARCHS="armv7 armv7s arm64" -sdk iphoneos VALID_ARCHS="armv7 armv7s arm64" ALWAYS_SEARCH_USER_PATHS="NO" CONFIGURATION_BUILD_DIR="../build/device" clean build $DISABLE_COVERAGE $DISABLE_INSTRUMENT
 
 echo "Creating universal version of $proj"
 rm -rf "$BUILD_PATH/$proj.framework"

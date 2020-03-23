@@ -1,3 +1,11 @@
+# This plugin is brought back to life and can be updated here
+
+## New plugin name: cordova-plugin-ms-adal-is-back
+
+## Fixes:
+
+- iOS 13 issue: [https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/ADAL-iOS-13-support](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/ADAL-iOS-13-support)
+
 # Active Directory Authentication Library (ADAL) plugin for Apache Cordova apps
 
 [![Build status](https://ci.appveyor.com/api/projects/status/hslf0dq6i33p320v/branch/master?svg=true)](https://ci.appveyor.com/project/adal-for-cordova-bot/azure-activedirectory-library-for-cordova/branch/master)
