@@ -1,3 +1,9 @@
+0.10.7 - May 04, 2020
+* ios: Upgrade ios ADAL framework to 4.0.7
+
+0.10.5 - March 20, 2020
+* ios: Fixed [iOS 13 issue](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/ADAL-iOS-13-support)
+
 0.10.1 - July 5, 2017
 * windows: added compatibility with VS2017
 * android: upgraded ADAL native SDK version to 1.12.0 
