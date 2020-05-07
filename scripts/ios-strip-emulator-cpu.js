@@ -18,7 +18,7 @@ module.exports = function (context) {
       shellScript: `
         echo "Target architectures: $ARCHS"
 
-        APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
+        APP_PATH="\${TARGET_BUILD_DIR}/\${WRAPPER_NAME}"
         
         find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
         do
@@ -30,7 +30,7 @@ module.exports = function (context) {
         FRAMEWORK_TMP_PATH="$FRAMEWORK_EXECUTABLE_PATH-tmp"
         
         # remove simulator's archs if location is not simulator's directory
-        case "${TARGET_BUILD_DIR}" in
+        case "\${TARGET_BUILD_DIR}" in
         *"iphonesimulator")
             echo "No need to remove archs"
             ;;
