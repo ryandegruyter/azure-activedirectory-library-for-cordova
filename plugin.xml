@@ -3,7 +3,7 @@
  Copyright (c) Microsoft Open Technologies, Inc.  All Rights Reserved.
  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
 -->
-<plugin id="cordova-plugin-ms-adal-is-back" version="0.10.9" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-ms-adal-is-back" version="0.10.10" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>ADAL for Cordova</name>
     <description>Provides Microsoft Azure Active Directory (ADAL) OAuth client.</description>
 
@@ -85,7 +85,7 @@
         <resource-file src="src/ios/ADALiOS.entitlements" />
         <hook type="after_plugin_install" src="scripts/configureEntitlementsIos.js" />
         <hook type="before_plugin_uninstall" src="scripts/configureEntitlementsIos.js" />
-        <hook type="after_plugin_install" src="scripts/ios-strip-emulator-cpu.js" />
+        <hook type="after_platform_add" src="scripts/ios-strip-emulator-cpu.js" />
 
         <!-- (CB-11854) CODE_SIGN_ENTITLEMENTS for ios@4.3.0 and up -->
         <config-file target="*-Debug.plist" parent="keychain-access-groups">
