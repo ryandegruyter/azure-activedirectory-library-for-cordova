@@ -6,7 +6,7 @@ module.exports = function (ctx) {
     var shell = require('shelljs');
     var path = require('path');
     var fs = require('fs');
-    var helperPluginId = 'cordova-plugin-ms-adal-is-back-sso';
+    var helperPluginId = 'cordova-plugin-ry o--sso';
 
     // Removing references from .projitems
     var projitems = shell.ls(path.join(ctx.opts.projectRoot, 'platforms/windows/*.projitems'))[0];

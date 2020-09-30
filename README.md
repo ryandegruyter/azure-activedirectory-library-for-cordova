@@ -1,6 +1,6 @@
 # This plugin is brought back to life and can be updated here
 
-## New plugin name: cordova-plugin-ms-adal-is-back
+## New plugin name: cordova-plugin-ryco-adal
 
 ## Fixes:
 
@@ -12,7 +12,7 @@
 // Remove the old plugin
 cordova plugin rm cordova-plugin-ms-adal
 // Install the new
-cordova plugin add cordova-plugin-ms-adal-is-back
+cordova plugin add cordova-plugin-ryco-adal
 ```
 
 # ========================
@@ -41,8 +41,8 @@ Once you’ve updated plugin to the latest version your application will continu
 - run the following commands:
 
     ```
-    cordova plugin rm cordova-plugin-ms-adal-is-back --save
-    cordova plugin add cordova-plugin-ms-adal-is-back@0.10.x --save
+    cordova plugin rm cordova-plugin-ryco-adal --save
+    cordova plugin add cordova-plugin-ryco-adal@0.10.x --save
     ```
 
 ## Community Help and Support
@@ -294,7 +294,7 @@ To run the tests you need to create a new application as described in [Installat
     ```
 
 * Update application's config.xml file: change `<content src="index.html" />` to `<content src="cdvtests/index.html" />`
-* Change AD-specific settings for test application at the beginning of `plugins\cordova-plugin-ms-adal-is-back\www\tests.js` file. Update `AUTHORITY_URL`, `RESOURCE_URL`, `REDIRECT_URL`, `APP_ID` to values, provided by your Azure AD. For instructions how to setup an Azure AD application see [Setting up an Application in Azure AD section](#setting-up-an-application-in-azure-ad).
+* Change AD-specific settings for test application at the beginning of `plugins\cordova-plugin-ryco-adal\www\tests.js` file. Update `AUTHORITY_URL`, `RESOURCE_URL`, `REDIRECT_URL`, `APP_ID` to values, provided by your Azure AD. For instructions how to setup an Azure AD application see [Setting up an Application in Azure AD section](#setting-up-an-application-in-azure-ad).
 * Build and run application.
 
 ## Windows Quirks ##
